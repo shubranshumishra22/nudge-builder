@@ -356,8 +356,8 @@ export default function AIPage() {
           <span className="text-xs font-medium text-muted-foreground">Live preview</span>
           {storeSlug && (
             <a
-              href={`http://localhost:3001/${storeSlug}`}
-              target="_blank"
+            href={`${process.env.NEXT_PUBLIC_STOREFRONT_URL || 'http://localhost:3001'}/${storeSlug}`}
+            target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 text-xs text-blue-600 hover:underline"
             >
@@ -387,7 +387,7 @@ export default function AIPage() {
         {storeSlug ? (
           <iframe
             key={refreshKey}
-            src={`http://localhost:3001/${storeSlug}?t=${Date.now()}`}
+            src={`${process.env.NEXT_PUBLIC_STOREFRONT_URL || 'http://localhost:3001'}/${storeSlug}?t=${Date.now()}`}
             className="h-full w-full border-0"
             title="Store preview"
           />

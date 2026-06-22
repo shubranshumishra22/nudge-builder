@@ -419,7 +419,7 @@ export async function POST(request: Request) {
 
     if (executedActions.length > 0 && store.slug) {
       try {
-        await fetch(`http://localhost:3000/api/revalidate`, {
+        await fetch(`/api/revalidate`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ slug: store.slug }),
