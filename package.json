@@ -1,0 +1,20 @@
+{
+  "name": "nudge-commerce",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.2.0",
+    "prettier-plugin-tailwindcss": "^0.5.0",
+    "turbo": "^2.0.0"
+  },
+  "packageManager": "pnpm@10.12.1",
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@nudge/db",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./supabase/middleware": "./src/supabase/middleware.ts"
+  },
+  "scripts": {
+    "build": "tsc --noEmit",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "@supabase/ssr": "^0.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "eslint": "^8.50.0"
+  }
+}
